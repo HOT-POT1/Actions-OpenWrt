@@ -20,3 +20,6 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 #添加luci-theme-aurora
 git clone https://github.com/eamonxg/luci-theme-aurora.git package/luci-theme-aurora
 git clone https://github.com/eamonxg/luci-app-aurora-config.git package/luci-app-aurora-config
+
+#添加luci-app-airoha-npu
+git clone https://github.com/luanmuc/luci-app-airoha-npu.git package/luci-app-airoha-npu
