@@ -17,6 +17,10 @@
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
+#注释pon_userspace的feeds，并拉取onu源码
+sed -i '/^src-git pon_userspace/s/^/# /' feeds.conf.default
+git clone https://github.com/naoki66/OpenWrt_ONU_CONFIG.git package/OpenWrt_ONU_CONFIG
+
 #添加luci-theme-aurora
 git clone https://github.com/eamonxg/luci-theme-aurora.git package/luci-theme-aurora
 git clone https://github.com/eamonxg/luci-app-aurora-config.git package/luci-app-aurora-config
